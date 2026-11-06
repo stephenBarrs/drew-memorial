@@ -36,8 +36,8 @@ original video to the repo. Pick one of these options:
 and adjusts quality to the connection.
 1. Upload the video to YouTube and set visibility to **Unlisted**, so only people
    with the link can find it.
-2. Copy the ID from the link (`https://youtu.be/AbC123xyz` gives `AbC123xyz`).
-3. In `content.js`, set `youtubeId: "AbC123xyz"`.
+2. Click **Share** and copy the link.
+3. In `content.js`, paste it in: `youtubeId: "https://youtu.be/AbC123xyz_Q"`.
 
 **Option B: Vimeo.** Same steps, but set `vimeoId`.
 

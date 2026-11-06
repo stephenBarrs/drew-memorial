@@ -7,7 +7,7 @@
  * Fill in ONE of these (leave the others as ""):
  *
  *  youtubeId  – best option. Upload the video to YouTube as "Unlisted" and paste
- *               the ID, e.g. for https://youtu.be/AbC123xyz use "AbC123xyz".
+ *               the Share link (e.g. "https://youtu.be/AbC123xyz_Q") or just the ID.
  *  vimeoId    – same idea for Vimeo, e.g. "123456789".
  *  src        – a video file stored in this repo, e.g. "video/drew-slideshow.mp4".
  *               GitHub rejects any single file over 100 MB, so a 200 MB video

@@ -19,8 +19,13 @@
   var title = V.title || "Memorial slideshow";
   var embed = null;
 
-  if (V.youtubeId) {
-    embed = '<iframe src="https://www.youtube-nocookie.com/embed/' + encodeURIComponent(V.youtubeId) +
+  // Accept a bare ID or any YouTube link (youtu.be/…, watch?v=…, /shorts/…, /live/…)
+  var yt = (V.youtubeId || "").trim();
+  var m = yt.match(/(?:youtu\.be\/|[?&]v=|\/(?:embed|shorts|live)\/)([\w-]{11})/);
+  if (m) yt = m[1];
+
+  if (yt) {
+    embed = '<iframe src="https://www.youtube-nocookie.com/embed/' + encodeURIComponent(yt) +
       '?rel=0&modestbranding=1" title="' + title + '" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>';
   } else if (V.vimeoId) {
     embed = '<iframe src="https://player.vimeo.com/video/' + encodeURIComponent(V.vimeoId) +
