@@ -17,7 +17,7 @@
  *                e.g. a GitHub Release asset (files up to 2 GB are allowed there).
  */
 window.VIDEO = {
-  youtubeId: "",
+  youtubeId: "https://youtu.be/kjP2Q0DaWe0",
   vimeoId: "",
   src: "",
   poster: "assets/img/cards/memorial-card.jpg",
