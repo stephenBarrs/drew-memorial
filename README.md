@@ -64,11 +64,10 @@ python3 -m http.server 8000
 ```
 Then open http://localhost:8000.
 
-## Publishing on GitHub Pages
+## Where the site lives
 
-1. Create the repo and push:
-   ```bash
-   gh repo create drew-memorial --public --source=. --push
-   ```
-2. Turn on Pages: **Settings → Pages → Source: Deploy from a branch → `main` / root**.
-3. The site will be live at `https://<your-username>.github.io/drew-memorial/`.
+- **Address:** https://www.drewmercer.org/
+- **Hosting:** GitHub Pages, from the `main` branch. Keep the `CNAME` file in the repo;
+  it connects the address to the site.
+- **Domain:** registered with AWS Route 53 through November 2036, with auto-renew on.
+  Auto-renew needs a valid card on the AWS account.
